@@ -48,13 +48,13 @@ export const Home = ({ idioma }) => {
         <div className='flex w-full h-screen'>
             {/* Parte izquierda */}
             <div className='w-[30%] h-full max-lg:hidden'>
-                <img id='foto' className='h-full object-cover' src={mifoto} alt='Foto personal' />
+                <img className='h-full object-cover' src={mifoto} alt='Foto personal' />
             </div>
 
             {/* Parte derecha */}
             <div className='bg-[#ffffff] w-[70%] h-full relative max-lg:w-[100%]'>
                 {/* Parte menú */}
-                <div className='flex h-full items-center absolute'>
+                <div id="foto" className='flex h-full items-center absolute'>
                     <div className='bg-[#ffffff] border-t-2 border-r-2 border-b-2 border-[#c2a9a9] w-14 flex flex-col gap-6 rounded-r-md hover:border-[#000d80] transition-all '>
                         <button
                             onClick={mostrarHome}
