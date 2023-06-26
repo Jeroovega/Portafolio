@@ -2,6 +2,12 @@ import React, { useState } from 'react';
 import { HiOutlineHome, HiOutlineBookmarkAlt, HiFolderOpen, HiMail } from "react-icons/hi";
 import { BotonesContacto } from './BotonesContacto';
 import { ContactUs } from './ContactUs';
+import mifoto from "../../multimedia/imagenes/yop.png"
+import citas from "../../multimedia/imagenes/citas.jpeg"
+import bateria from "../../multimedia/imagenes/bateria.jpeg"
+import calculadora from "../../multimedia/imagenes/calculadora.jpeg"
+import movieculture from "../../multimedia/imagenes/movieculture.jpeg"
+import pomodoro from "../../multimedia/imagenes/pomodoro.jpeg"
 
 export const Home = ({ idioma }) => {
 
@@ -42,7 +48,7 @@ export const Home = ({ idioma }) => {
         <div className='flex w-full h-screen'>
             {/* Parte izquierda */}
             <div className='w-[30%] h-full max-lg:hidden'>
-                <img id='foto' className='h-full object-cover' src='../../multimedia/yop.png' alt='Foto personal' />
+                <img id='foto' className='h-full object-cover' src={mifoto} alt='Foto personal' />
             </div>
 
             {/* Parte derecha */}
@@ -261,7 +267,7 @@ export const Home = ({ idioma }) => {
                                     <a href='https://movieculture.netlify.app/' target={'_blank'}>
                                         <h3 className='font-semibold text-xl cursor-default'><span className=''>Movie</span><span className='text-[#000000]'>Culture</span></h3>
                                         <div className='w-32 h-0.5 bg-[#D6D6D6] mb-2 cursor-default'></div>
-                                        <img className='mb-6 h-44 w-96 opacity-50 hover:opacity-100 transition-all duration-700' src='../../multimedia/imagenes/movieculture.jpeg' />
+                                        <img className='mb-6 h-44 w-96 opacity-50 hover:opacity-100 transition-all duration-700' src={movieculture} />
                                     </a>
 
                                 </div>
@@ -269,7 +275,7 @@ export const Home = ({ idioma }) => {
                                     <a href='https://motivateporhoy.netlify.app/' target={'_blank'}>
                                         <h3 className='font-semibold text-xl cursor-default'>{idioma ? "generador de frases" : "phrase generator."}</h3>
                                         <div className='w-32 h-0.5 bg-[#D6D6D6] mb-2 cursor-default'></div>
-                                        <img className='mb-6 h-44 w-96 opacity-50 hover:opacity-100 transition-all duration-700' src='../../multimedia/imagenes/citas.jpeg' />
+                                        <img className='mb-6 h-44 w-96 opacity-50 hover:opacity-100 transition-all duration-700' src={citas} />
                                     </a>
                                 </div>
 
@@ -277,7 +283,7 @@ export const Home = ({ idioma }) => {
                                     <a href='https://pomodorojv.netlify.app/' target={'_blank'}>
                                         <h3 className='font-semibold text-xl cursor-default '>pomodoro study</h3>
                                         <div className='w-32 h-0.5 bg-[#D6D6D6] mb-2 cursor-default'></div>
-                                        <img className='mb-6 h-44 w-96 opacity-50 hover:opacity-100 transition-all duration-700' src='../../multimedia/imagenes/pomodoro.jpeg' />
+                                        <img className='mb-6 h-44 w-96 opacity-50 hover:opacity-100 transition-all duration-700' src={pomodoro} />
                                     </a>
 
                                 </div>
@@ -286,7 +292,7 @@ export const Home = ({ idioma }) => {
                                     <a href='https://calculadorajv.netlify.app/' target={'_blank'}>
                                         <h3 className='font-semibold text-xl cursor-default '>{idioma ? "calculadora iOS" : "iOS calculator."}</h3>
                                         <div className='w-32 h-0.5 bg-[#D6D6D6] mb-2 cursor-default'></div>
-                                        <img className='mb-6 h-44 w-96 opacity-50 hover:opacity-100 transition-all duration-700' src='../../multimedia/imagenes/calculadora.jpeg' />
+                                        <img className='mb-6 h-44 w-96 opacity-50 hover:opacity-100 transition-all duration-700' src={calculadora} />
                                     </a>
                                 </div>
 
@@ -294,7 +300,7 @@ export const Home = ({ idioma }) => {
                                     <a href='https://bateriajv.netlify.app/' target={'_blank'}>
                                         <h3 className='font-semibold text-xl cursor-default '>{idioma ? "bateria online" : "online drum machine."}</h3>
                                         <div className='w-32 h-0.5 bg-[#D6D6D6] mb-2 cursor-default'></div>
-                                        <img className='mb-6 h-44 w-96 opacity-50 hover:opacity-100 transition-all duration-700' src='../../multimedia/imagenes/bateria.jpeg' />
+                                        <img className='mb-6 h-44 w-96 opacity-50 hover:opacity-100 transition-all duration-700' src={bateria} />
                                     </a>
                                 </div>
 

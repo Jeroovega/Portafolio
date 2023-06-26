@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { TextoDinamico } from './TextoDinamico';
-import foto1 from "../../../multimedia/imagenes/español.png"
+import banderaespaña from "../../../multimedia/imagenes/español.png"
+import banderainglesa from "../../../multimedia/imagenes/ingles.png"
+import videoheader from "../../../multimedia/header2.mp4"
 
 
 export const Header = ({setIdioma, idioma}) => {
@@ -22,16 +24,16 @@ export const Header = ({setIdioma, idioma}) => {
     return (
         <div className='h-screen w-full relative bg-red overflow-y-hidden'>
             <div className='absolute inset-0 overflow-hidden'>
-                <video className='w-full h-full object-cover' src='/multimedia/header2.mp4' autoPlay loop muted></video>
+                <video className='w-full h-full object-cover' src={videoheader} autoPlay loop muted></video>
             </div>
             <div className='top-[92%] left-[90%] z-50 relative flex bg-[#0b0c12] pr-2 p-2 rounded-xl w-28 max-sm:top-[90%] max-sm:left-[40%] max-md:top-[90%] max-md:left-[5%] max-lg:top-[90%] max-lg:left-[5%] max-xl:left-[85%]  '>
                 <button
                     onClick={()=> {cambiarEspanol()}}>
-                    <img src={foto1} alt='bandera de españa' className='object-cover h-8 w-12 rounded-md' />
+                    <img src={banderaespaña} alt='bandera de españa' className='object-cover h-8 w-12 rounded-md' />
                 </button>
                 <button
                     onClick={()=> {cambiarIngles()}}>
-                    <img src='multimedia/imagenes/ingles.png' alt='bandera de inglaterra' className='object-cover h-8 w-12 rounded-md' />
+                    <img src={banderainglesa} alt='bandera de inglaterra' className='object-cover h-8 w-12 rounded-md' />
                 </button>
                 <button
                 onClick={()=> {setIngles(!ingles), setEspanol(!espanol), setIdioma(!idioma)}}

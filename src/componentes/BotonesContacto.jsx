@@ -1,5 +1,9 @@
 import React from 'react'
 import CV from "../../multimedia/curriculum/JeronimoVega-DesarrolladorFrontEnd-CV.pdf";
+import cvlogo from "../../multimedia/imagenes/cv.png"
+import gmail from "../../multimedia/imagenes/gmail.png"
+import github from "../../multimedia/imagenes/github.png"
+import linkedin from "../../multimedia/imagenes/linkedin.png"
 
 const eventoMail = ()=>{
     const email = "jerovega2001@gmail.com";
@@ -32,25 +36,25 @@ export const BotonesContacto = () => {
             <button 
             onClick={eventoMail}
             className='w-[50%] mb-6 py-2 flex justify-start pl-2  border-2 bg-[#ffffff]'>
-                <img src='../../multimedia/imagenes/gmail.png' className='h-6 w-14 object-cover border-r-2 pr-4 max-lg:hidden' />
+                <img src={gmail} className='h-6 w-14 object-cover border-r-2 pr-4 max-lg:hidden' />
                 <span className='pl-6 font-bold max-lg:p-0 max-lg:text-center max-lg:w-full'>GMAIL</span>
             </button>
             <button 
             onClick={eventoLinkedin}
             className='w-[50%] mb-6 py-2 flex justify-start pl-2 border-2 border-[#0274B3] bg-[#0274B3]'>
-                <img src='../../multimedia/imagenes/linkedin.png' className='h-6 w-14  object-cover border-r-2 pr-4 max-lg:hidden' />
+                <img src={linkedin} className='h-6 w-14  object-cover border-r-2 pr-4 max-lg:hidden' />
                 <span className='pl-6 text-[#fff] font-bold max-lg:p-0 max-lg:text-center max-lg:w-full'>LINKEDIN</span>
             </button>
             <button 
             onClick={eventoGitHub}
             className='w-[50%] py-2 flex justify-start pl-2 border-2 bg-[#1C1C1C] border-[#1C1C1C] max-lg:mb-6'>
-                <img src='../../multimedia/imagenes/github.png' className='h-6 w-14 object-cover border-r-2 pr-4 max-lg:hidden' />
+                <img src={github} className='h-6 w-14 object-cover border-r-2 pr-4 max-lg:hidden' />
                 <span className='pl-6 text-[#fff] font-bold max-lg:p-0 max-lg:text-center max-lg:w-full'>GITHUB</span>
             </button>
             <button 
             onClick={eventoCV}
             className='w-[50%] py-2 flex justify-start pl-2 border-2 bg-[#ffffff]'>
-                <img src='../../multimedia/imagenes/cv.png' className='h-6 w-14 object-cover border-r-2 pr-4 max-lg:hidden' />
+                <img src={cvlogo} className='h-6 w-14 object-cover border-r-2 pr-4 max-lg:hidden' />
                 <span className='pl-6 text-[#000] font-bold max-lg:p-0 max-lg:text-center max-lg:w-full'>CURRICULUM VITAE</span>
             </button>
         </div>
