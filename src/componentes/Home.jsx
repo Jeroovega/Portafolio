@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { HiOutlineHome, HiOutlineBookmarkAlt, HiFolderOpen, HiMail } from "react-icons/hi";
 import { BotonesContacto } from './BotonesContacto';
 import { ContactUs } from './ContactUs';
-import mifoto from "../../multimedia/imagenes/yop.png"
-import citas from "../../multimedia/imagenes/citas.jpeg"
-import bateria from "../../multimedia/imagenes/bateria.jpeg"
-import calculadora from "../../multimedia/imagenes/calculadora.jpeg"
-import movieculture from "../../multimedia/imagenes/movieculture.jpeg"
-import pomodoro from "../../multimedia/imagenes/pomodoro.jpeg"
+import mifoto from "../../multimedia/imagenes/yop.webp"
+import citas from "../../multimedia/imagenes/citas.webp"
+import bateria from "../../multimedia/imagenes/bateria.webp"
+import calculadora from "../../multimedia/imagenes/calculadora.webp"
+import movieculture from "../../multimedia/imagenes/movieculture.webp"
+import pomodoro from "../../multimedia/imagenes/pomodoro.webp"
 
 export const Home = ({ idioma }) => {
 
@@ -58,16 +58,16 @@ export const Home = ({ idioma }) => {
                     <div className='bg-[#ffffff] border-t-2 border-r-2 border-b-2 border-[#c2a9a9] w-14 flex flex-col gap-6 rounded-r-md hover:border-[#000d80] transition-all '>
                         <button
                             onClick={mostrarHome}
-                            className=' bg-[#ffffff] border-t-2 pt-4 flex w-full items-center justify-center text-3xl'><HiOutlineHome className={`${home ? "text-[#000d80]" : "text-[#8b8888]"}  hover:text-[#000d80] transition-all`} /></button>
+                            className=' bg-[#ffffff] border-t-2 pt-4 flex w-full items-center justify-center text-3xl'><HiOutlineHome alt="Botón sección Home" className={`${home ? "text-[#000d80]" : "text-[#8b8888]"}  hover:text-[#000d80] transition-all`} /></button>
                         <button
                             onClick={mostrarConocimientos}
-                            className=' bg-[#ffffff] border-t-2 pt-4 flex w-full items-center justify-center text-3xl'><HiOutlineBookmarkAlt className={`${conocimientos ? "text-[#000d80]" : "text-[#8b8888]"}  hover:text-[#000d80] transition-all`} /></button>
+                            className=' bg-[#ffffff] border-t-2 pt-4 flex w-full items-center justify-center text-3xl'><HiOutlineBookmarkAlt alt="Botón sección conocimientos" className={`${conocimientos ? "text-[#000d80]" : "text-[#8b8888]"}  hover:text-[#000d80] transition-all`} /></button>
                         <button
                             onClick={mostrarTrabajo}
-                            className=' bg-[#ffffff] border-t-2 pt-4 flex w-full items-center justify-center text-3xl'><HiFolderOpen className={`${trabajo ? "text-[#000d80]" : "text-[#8b8888]"}  hover:text-[#000d80] transition-all`} /></button>
+                            className=' bg-[#ffffff] border-t-2 pt-4 flex w-full items-center justify-center text-3xl'><HiFolderOpen alt="Botón sección trabajos" className={`${trabajo ? "text-[#000d80]" : "text-[#8b8888]"}  hover:text-[#000d80] transition-all`} /></button>
                         <button
                             onClick={mostrarContacto}
-                            className=' bg-[#ffffff] border-t-2 pb-4 pt-4 flex w-full items-center justify-center text-3xl '><HiMail className={`${contacto ? "text-[#000d80]" : "text-[#8b8888]"}  hover:text-[#000d80] transition-all`} /></button>
+                            className=' bg-[#ffffff] border-t-2 pb-4 pt-4 flex w-full items-center justify-center text-3xl '><HiMail alt="Botón sección contacto" className={`${contacto ? "text-[#000d80]" : "text-[#8b8888]"}  hover:text-[#000d80] transition-all`} /></button>
                     </div>
                 </div>
                 {/* Parte Home */}

@@ -1,9 +1,9 @@
 import React from 'react'
 import CV from "../../multimedia/curriculum/JeronimoVega-DesarrolladorFrontEnd-CV.pdf";
-import cvlogo from "../../multimedia/imagenes/cv.png"
-import gmail from "../../multimedia/imagenes/gmail.png"
-import github from "../../multimedia/imagenes/github.png"
-import linkedin from "../../multimedia/imagenes/linkedin.png"
+import cvlogo from "../../multimedia/imagenes/cv.webp"
+import gmail from "../../multimedia/imagenes/gmail.webp"
+import github from "../../multimedia/imagenes/github.webp"
+import linkedin from "../../multimedia/imagenes/linkedin.webp"
 
 const eventoMail = ()=>{
     const email = "jerovega2001@gmail.com";
