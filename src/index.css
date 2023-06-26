@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-video {
+    background: url("../multimedia/header.mp4");
+    height: 100%;
+    width: 100%;
+}
+
+  body::-webkit-scrollbar {
+    width: 0px; /* Ancho de la barra de desplazamiento */
+  }
+
+  .barradesliz::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .barradesliz::-webkit-scrollbar-thumb {
+    background-color: rgb(128, 134, 127);
+    border-radius: 30px;
+  }
+  
+  .barradesliz::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+  
+  .barradesliz::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
+  @import url("../multimedia/Segoe\ UI\ Italic.ttf");
+
+  .font-segoe-italic {
+    font-family: 'Segoe UI Italic', sans-serif;
+    font-style: italic;
+  }
