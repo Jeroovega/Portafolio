@@ -26,11 +26,11 @@ export const Header = ({setIdioma, idioma}) => {
             <div className='top-[92%] left-[90%] z-50 relative flex bg-[#0b0c12] pr-2 p-2 rounded-xl w-28 max-sm:top-[90%] max-sm:left-[40%] max-md:top-[90%] max-md:left-[5%] max-lg:top-[90%] max-lg:left-[5%] max-xl:left-[85%]  '>
                 <button
                     onClick={()=> {cambiarEspanol()}}>
-                    <img src='../../../multimedia/imagenes/español.png' className='object-cover h-8 w-12 rounded-md' />
+                    <img src='/multimedia/imagenes/español.png' alt='bandera de españa' className='object-cover h-8 w-12 rounded-md' />
                 </button>
                 <button
                     onClick={()=> {cambiarIngles()}}>
-                    <img src='../../../multimedia/imagenes/ingles.png' className='object-cover h-8 w-12 rounded-md' />
+                    <img src='/multimedia/imagenes/ingles.png' alt='bandera de inglaterra' className='object-cover h-8 w-12 rounded-md' />
                 </button>
                 <button
                 onClick={()=> {setIngles(!ingles), setEspanol(!espanol), setIdioma(!idioma)}}
