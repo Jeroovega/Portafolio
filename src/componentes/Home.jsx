@@ -8,6 +8,9 @@ import bateria from "../../multimedia/imagenes/bateria.webp"
 import calculadora from "../../multimedia/imagenes/calculadora.webp"
 import movieculture from "../../multimedia/imagenes/movieculture.webp"
 import pomodoro from "../../multimedia/imagenes/pomodoro.webp"
+import lp from "../../multimedia/imagenes/lp.jpeg"
+import dam from "../../multimedia/imagenes/dam.jpeg"
+import edlp from "../../multimedia/imagenes/edlp.jpeg"
 
 export const Home = ({ idioma }) => {
 
@@ -301,6 +304,28 @@ export const Home = ({ idioma }) => {
                                         <h3 className='font-semibold text-xl cursor-default '>{idioma ? "bateria online" : "online drum machine."}</h3>
                                         <div className='w-32 h-0.5 bg-[#D6D6D6] mb-2 cursor-default'></div>
                                         <img className='mb-6 h-44 w-96 opacity-50 hover:opacity-100 transition-all duration-700' src={bateria} />
+                                    </a>
+                                </div>
+
+                                <div className='hover:text-[#280606] transition-all duration-700'>
+                                    <a>
+                                        <h3 className='font-semibold text-xl cursor-default '>{idioma ? "la plata turismo (proximamente)" : "la plata tourism. (soon)."}</h3>
+                                        <div className='w-32 h-0.5 bg-[#D6D6D6] mb-2 cursor-default'></div>
+                                        <img className='mb-6 h-44 w-96 opacity-50 hover:opacity-100 transition-all duration-700' src={lp} />
+                                    </a>
+                                </div>
+                                <div className='hover:text-[#280606] transition-all duration-700'>
+                                    <a>
+                                        <h3 className='font-semibold text-xl cursor-default '>{idioma ? "la plata turismo (proximamente)" : "la plata tourism. (soon)."}</h3>
+                                        <div className='w-32 h-0.5 bg-[#D6D6D6] mb-2 cursor-default'></div>
+                                        <img className='mb-6 h-44 w-96 opacity-50 hover:opacity-100 transition-all duration-700' src={dam} />
+                                    </a>
+                                </div>
+                                <div className='hover:text-[#280606] transition-all duration-700'>
+                                    <a>
+                                        <h3 className='font-semibold text-xl cursor-default '>{idioma ? "la plata turismo (proximamente)" : "la plata tourism. (soon)."}</h3>
+                                        <div className='w-32 h-0.5 bg-[#D6D6D6] mb-2 cursor-default'></div>
+                                        <img className='mb-6 h-44 w-96 opacity-50 hover:opacity-100 transition-all duration-700' src={edlp} />
                                     </a>
                                 </div>
 
