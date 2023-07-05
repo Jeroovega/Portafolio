@@ -11,6 +11,7 @@ import pomodoro from "../../multimedia/imagenes/pomodoro.webp"
 import lp from "../../multimedia/imagenes/lp.jpeg"
 import dam from "../../multimedia/imagenes/dam.jpeg"
 import edlp from "../../multimedia/imagenes/edlp.jpeg"
+import potrero from "../../multimedia/imagenes/potrero.jpeg"
 
 export const Home = ({ idioma }) => {
 
@@ -274,6 +275,15 @@ export const Home = ({ idioma }) => {
                                     </a>
 
                                 </div>
+                                <div className='hover:text-[#D3D93C] transition-all duration-700'>
+                                    <a href='https://potreroempleoproyecto.netlify.app/' target={"_blank"}>
+                                        <h3 className='font-semibold text-xl cursor-poiner '>{idioma ? "Potrero Empleos" : "Potrero Empleos"}</h3>
+                                        <div className='w-32 h-0.5 bg-[#D6D6D6] mb-2 cursor-default'></div>
+                                        <img className='mb-6 h-44 w-96 opacity-50 hover:opacity-100 transition-all duration-700' src={potrero} />
+                                    </a>
+                                </div>
+
+
                                 <div>
                                     <a href='https://motivateporhoy.netlify.app/' target={'_blank'}>
                                         <h3 className='font-semibold text-xl cursor-default'>{idioma ? "generador de frases" : "phrase generator."}</h3>
@@ -307,6 +317,7 @@ export const Home = ({ idioma }) => {
                                     </a>
                                 </div>
 
+
                                 <div className='hover:text-[#280606] transition-all duration-700'>
                                     <a>
                                         <h3 className='font-semibold text-xl cursor-default '>{idioma ? "la plata turismo (proximamente)" : "la plata tourism. (soon)."}</h3>
@@ -334,25 +345,25 @@ export const Home = ({ idioma }) => {
                         {/* texto información trabajo */}
                         <div>
                             <p className='mb-5 max-lg:text-lg'>
-                            {idioma ? "Las principales tecnologías utilizadas en los siguientes trabajos se resumen en React.JS como framework principal, acompañado de Vite para optimizar el rendimiento y complementado con el framework de CSS TailwindCSS." : "The main technologies used in the following projects are summarized as follows: React.js as the primary framework, accompanied by Vite for performance optimization, and complemented with the CSS framework Tailwind CSS."}
+                                {idioma ? "Las principales tecnologías utilizadas en los siguientes trabajos se resumen en React.JS como framework principal, acompañado de Vite para optimizar el rendimiento y complementado con el framework de CSS TailwindCSS." : "The main technologies used in the following projects are summarized as follows: React.js as the primary framework, accompanied by Vite for performance optimization, and complemented with the CSS framework Tailwind CSS."}
                             </p>
                             <p className='mb-5 pb-5 border-b-2 max-lg:text-lg'>
-                            {idioma ? "El diseño de cada uno de los sitios web y las aplicaciones es totalmente propio, basado en una estética minimalista y aesthetic, buscando la concentración de información sobre puntos vitales que atraen el interés del usuario, como colores agradables y repetitivos en la página, o fondos llamativos. Todo diseño es primero creado y procesado por herramientas de Diseño UX/UI, en mi caso utilizo Adobe Xd para la creación de prototipos de cada página web." : "The design of each website and application is completely original, based on a minimalist and aesthetic aesthetic, aiming for the concentration of information on vital points that attract user interest, such as pleasant and repetitive colors on the page or eye-catching backgrounds. All designs are first created and processed using UX/UI design tools. In my case, I use Adobe Xd for creating prototypes of each web page."}
+                                {idioma ? "El diseño de cada uno de los sitios web y las aplicaciones es totalmente propio, basado en una estética minimalista y aesthetic, buscando la concentración de información sobre puntos vitales que atraen el interés del usuario, como colores agradables y repetitivos en la página, o fondos llamativos. Todo diseño es primero creado y procesado por herramientas de Diseño UX/UI, en mi caso utilizo Adobe Xd para la creación de prototipos de cada página web." : "The design of each website and application is completely original, based on a minimalist and aesthetic aesthetic, aiming for the concentration of information on vital points that attract user interest, such as pleasant and repetitive colors on the page or eye-catching backgrounds. All designs are first created and processed using UX/UI design tools. In my case, I use Adobe Xd for creating prototypes of each web page."}
                             </p>
 
                             <p className='mb-5 max-lg:text-lg'>
                                 <a href='https://movieculture.netlify.app/' target={'_blank'}>
                                     <span className='text-[#FF0F0F] font-semibold'>Movie</span><span className='font-semibold'>Culture</span>
-                                </a>, 
+                                </a>,
                                 {idioma ? " surge como mi primer proyecto individual completamente elaborado, ya que utilice las diversas tecnologías mencionadas, además realicé una consulta a la API de The Movie Database para recoger la información necesaria para el funcionamiento. Es un proyecto basado en una aplicación web de entretenimiento cinéfilo, se basa en un sistema de muestra de tarjetas y a raíz de eso el usuario debe adivinar tres parametros: El nombre de la película, el año que fue lanzada y el director de la cinta. Cada respuesta correcta otorga una sumatoria de 10 puntos, la cual se acumula en una puntuación que se puede reiniciar. La aplicación cuenta con un proceso de selección filtrada por la popularidad de las peliculas, aquellas que según The Movie Database pasen los 20 puntos de popularidad serán mostradas, de lo contrario se filtrara a la siguiente pelicula que cumpla con el requisito, esto surge como consecuencia de contar con una gran base de datos y tener el problema de mostrar películas no tan conocidas." : " my first fully developed individual project, was created using the mentioned technologies. I also made use of The Movie Database API to collect the necessary information for its functionality. This project is a web application centered around cinephile entertainment. It features a card display system where users are prompted to guess three parameters: the movie title, the release year, and the director of the film. Each correct answer earns the user 10 points, which accumulate in a score that can be reset.                                The application includes a selection process filtered by movie popularity. Only movies with a popularity score of over 20, according to The Movie Database, will be shown. If a movie doesn't meet this popularity threshold, the application will filter to the next movie that meets the requirement. This approach was implemented due to the large database size and the challenge of showcasing lesser-known films."}
                             </p>
                             <p className='mb-5 max-lg:text-lg'>
                                 <a href='https://motivateporhoy.netlify.app/' target={'_blank'}><span className='font-semibold'>{idioma ? "generador de frases" : "phrase generator"}</span></a>
-                                {idioma ? " , es uno de mis 4 proyectos necesarios para la aprobación de mi certificación como Front-End Development Libraries de freeCodeCamp, en este proyecto utilicé una API externa para obtener una base de citas textuales, luego mediante algoritmos logré realizar un generador de frases aleatorias con su respectivo autor, además le agregué la función de poder publicar esa frase en la red social Twitter." : ", is one of my four projects required for the completion of my Front-End Development Libraries certification from freeCodeCamp. For this project, I utilized an external API to fetch a collection of famous quotes. Using algorithms, I created a random phrase generator that displays a quote along with its respective author. Additionally, I added the functionality to share the generated quote on the Twitter social media platform."}
+                                {idioma ? ", es uno de mis 4 proyectos necesarios para la aprobación de mi certificación como Front-End Development Libraries de freeCodeCamp, en este proyecto utilicé una API externa para obtener una base de citas textuales, luego mediante algoritmos logré realizar un generador de frases aleatorias con su respectivo autor, además le agregué la función de poder publicar esa frase en la red social Twitter." : ", is one of my four projects required for the completion of my Front-End Development Libraries certification from freeCodeCamp. For this project, I utilized an external API to fetch a collection of famous quotes. Using algorithms, I created a random phrase generator that displays a quote along with its respective author. Additionally, I added the functionality to share the generated quote on the Twitter social media platform."}
                             </p>
                             <p className='mb-5 max-lg:text-lg'>
                                 <a href='https://pomodorojv.netlify.app/' target={'_blank'}><span className='text-[#8A30C6] font-semibold'>pomodoro study</span></a>
-                                {idioma ? ", es otro proyecto de la certificación de Front-End Development Libraries de freeCodeCamp, es un cronometro basado en el método pomodoro utilizado por las personas para concentrarse realizando que haceres durante 25 minutos sin desconcentración y aplicando un intervalo de 5 minutos como descanso. La aplicación también cuenta con su propio ajuste del método para realizar mayores tiempos de esfuerzo y de descanso para ajustarse a lo que busca el usuario." : ", is another project from the Front-End Development Libraries certification by freeCodeCamp. It is a timer based on the Pomodoro Technique, a time management method used by individuals to enhance focus and productivity. The technique involves working on tasks for 25 minutes without any distractions, followed by a 5-minute break. The Pomodoro Study application allows users to customize their work and break durations based on their preferences. They can adjust the timer to longer periods of focused work and longer breaks, aligning with their specific needs and goals."}                                
+                                {idioma ? ", es otro proyecto de la certificación de Front-End Development Libraries de freeCodeCamp, es un cronometro basado en el método pomodoro utilizado por las personas para concentrarse realizando que haceres durante 25 minutos sin desconcentración y aplicando un intervalo de 5 minutos como descanso. La aplicación también cuenta con su propio ajuste del método para realizar mayores tiempos de esfuerzo y de descanso para ajustarse a lo que busca el usuario." : ", is another project from the Front-End Development Libraries certification by freeCodeCamp. It is a timer based on the Pomodoro Technique, a time management method used by individuals to enhance focus and productivity. The technique involves working on tasks for 25 minutes without any distractions, followed by a 5-minute break. The Pomodoro Study application allows users to customize their work and break durations based on their preferences. They can adjust the timer to longer periods of focused work and longer breaks, aligning with their specific needs and goals."}
                             </p>
                             <p className='mb-5 max-lg:text-lg'>
                                 <a href='https://calculadorajv.netlify.app/' target={'_blank'}><span className='text-[#E4972A] font-semibold'>{idioma ? "calculadora iOS" : "iOS calculator"}</span></a>
