@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { HiOutlineHome, HiOutlineBookmarkAlt, HiFolderOpen, HiMail } from "react-icons/hi";
 import { BotonesContacto } from './BotonesContacto';
 import { ContactUs } from './ContactUs';
-import mifoto from "../../multimedia/imagenes/yop2.jpeg"
+import mifoto from "../../multimedia/imagenes/yop4.jpeg"
 import citas from "../../multimedia/imagenes/citas.webp"
 import bateria from "../../multimedia/imagenes/bateria.webp"
 import calculadora from "../../multimedia/imagenes/calculadora.webp"
